@@ -1,0 +1,16 @@
+<h1>Гостевая книга</h1>
+
+<div>
+Общее количестве записей - {{.SignatureCount}}
+    <a href="/guestbook/new">Добавте вашу запись</a>
+</div>
+
+
+
+<div>
+        {{range .Signature}}
+        <p>{{.}}</p>
+        {{end}}
+
+
+</div>
